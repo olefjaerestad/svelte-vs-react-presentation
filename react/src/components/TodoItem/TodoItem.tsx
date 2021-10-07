@@ -1,6 +1,6 @@
 import React, {FC, MouseEvent, useContext} from 'react';
 import { TodosContext } from '../../App';
-import { ITodo } from '../../types';
+import type { ITodo } from '../../types';
 
 export const TodoItem: FC<ITodo & {index: number}> = function(props) {
   const { dispatch } = useContext(TodosContext);

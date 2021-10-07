@@ -1,7 +1,23 @@
-import React, { createContext, useReducer } from 'react';
+<script lang="ts">
+  import type { ITodo } from './types';
+  import AddTodo from './components/AddTodo/AddTodo.svelte';
+
+  const todos: ITodo[] = [];
+</script>
+
+<AddTodo />
+{#each todos as todo}
+  
+{/each}
+
+
+
+
+
+<!-- import React, { createContext, useReducer } from 'react';
 import { AddTodo } from './components/AddTodo/AddTodo';
 import { TodoList } from './components/TodoList/TodoList';
-import type { ITodo, TTodoAction } from './types';
+import { ITodo, TTodoAction } from './types';
 
 function todosReducer(state: ITodo[], action: TTodoAction) {
   switch(action.type) {
@@ -18,9 +34,9 @@ function todosReducer(state: ITodo[], action: TTodoAction) {
 
 export const TodosContext = createContext<{dispatch: React.Dispatch<TTodoAction>}>({
   dispatch: (action) => {}
-})
+}) -->
 
-export const App: React.FC = function() {
+<!-- export const App: React.FC = function() {
   const [todos, dispatch] = useReducer(todosReducer, []);
 
   return (
@@ -31,4 +47,4 @@ export const App: React.FC = function() {
       </TodosContext.Provider>
     </>
   );
-}
+} -->

@@ -22,6 +22,8 @@ A compiler approach to frontend frameworks.
   - Output files look quite different than src-files. Sourcemaps can help, but they can't prevent logical errors.
   - No (official-ish) devtools for state management. 
     - https://chrome.google.com/webstore/detail/svelte-devtools/ckolcbmkjpjmangdbmnkpjigpkddpogn (doesn't cover stores).
+- Setting up typescript requires more work than with React.
+  - https://svelte.dev/blog/svelte-and-typescript
 
 ## Different:
 - State management.
