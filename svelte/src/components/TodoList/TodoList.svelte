@@ -1,10 +1,12 @@
 <script lang="ts">
   import TodoItem from '../TodoItem/TodoItem.svelte';
-  import { store } from '../../App.svelte';
+  import type { ITodo } from '../../types';
+
+  export let todos: ITodo[];
 </script>
 
 <ul>
-  {#each $store.todos as todo, index}
+  {#each todos as todo, index}
     <TodoItem title={todo.title} {index} />
   {/each}
 </ul>

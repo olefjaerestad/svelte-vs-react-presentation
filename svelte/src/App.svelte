@@ -9,5 +9,9 @@
   });
 </script>
 
+<script lang="ts">
+  $: todos = $store.todos;
+</script>
+
 <AddTodo />
-<TodoList />
+<TodoList {todos} />
