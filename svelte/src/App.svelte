@@ -6,9 +6,9 @@
 </script>
 
 <AddTodo />
-{#each todos as todo}
+<!-- {#each todos as todo}
   
-{/each}
+{/each} -->
 
 
 
