@@ -24,7 +24,9 @@ A compiler approach to frontend frameworks.
   - No (official-ish) devtools for state management. 
     - https://chrome.google.com/webstore/detail/svelte-devtools/ckolcbmkjpjmangdbmnkpjigpkddpogn (doesn't cover stores).
 - Setting up typescript requires more work than with React.
-  - https://svelte.dev/blog/svelte-and-typescript
+  - https://svelte.dev/blog/svelte-and-typescript#Adding_TypeScript_to_an_existing_project
+  - https://github.com/sveltejs/template/blob/master/scripts/setupTypeScript.js
+  - https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Svelte_TypeScript
 
 ## Different:
 - State management.
