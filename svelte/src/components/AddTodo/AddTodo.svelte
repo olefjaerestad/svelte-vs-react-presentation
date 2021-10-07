@@ -1,5 +1,5 @@
 <script lang="ts">
-  const title: string = '';
+  let title: string = '';
 
   function handleSubmit() {
     console.log('handleSubmit()');
