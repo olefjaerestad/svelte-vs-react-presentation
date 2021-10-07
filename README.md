@@ -3,6 +3,7 @@ Comparing Svelte and React. How do they compare in terms of ideology, behaviour 
 
 ## TODO:
 - Add points from [here](https://dev.to/swyx/svelte-for-sites-react-for-apps-2o8h)
+- Add section about Svelte [`actions`](https://svelte.dev/tutorial/actions).
 
 ## Svelte:
 A compiler approach to frontend frameworks.
