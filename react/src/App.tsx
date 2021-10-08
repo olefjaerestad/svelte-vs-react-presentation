@@ -18,7 +18,7 @@ function todosReducer(state: ITodo[], action: TTodoAction) {
 
 export const TodosContext = createContext<{dispatch: React.Dispatch<TTodoAction>}>({
   dispatch: (action) => {}
-})
+});
 
 export const App: React.FC = function() {
   const [todos, dispatch] = useReducer(todosReducer, []);

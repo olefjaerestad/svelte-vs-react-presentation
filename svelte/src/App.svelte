@@ -11,6 +11,10 @@
 
 <script lang="ts">
   $: todos = $store.todos;
+
+  $: {
+    console.log('Updated todos:', todos);
+  }
 </script>
 
 <AddTodo />
