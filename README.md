@@ -23,6 +23,8 @@ A compiler approach to frontend frameworks.
   - Output files look quite different than src-files. Sourcemaps can help, but they can't prevent logical errors.
   - No (official-ish) devtools for state management. 
     - https://chrome.google.com/webstore/detail/svelte-devtools/ckolcbmkjpjmangdbmnkpjigpkddpogn (doesn't cover stores).
+- Smaller community and third party ecosystem.
+  - Harder to google things.
 - Setting up typescript requires more work than with React.
   - https://svelte.dev/blog/svelte-and-typescript#Adding_TypeScript_to_an_existing_project
   - https://github.com/sveltejs/template/blob/master/scripts/setupTypeScript.js
@@ -34,6 +36,30 @@ A compiler approach to frontend frameworks.
   - https://svelte.dev/repl/cda14d2c02574b5ab70bb270816b9076?version=3.38.3
 
 ## Code examples/differences from React:
+React:
+```jsx
+export function MyComponent(props) {
+  return (
+    <>
+      <h1>Component markup</h1>
+      <p>I am the component markup</p>
+    </>
+  );
+}
+```
+
+Svelte:
+```html
+<script lang="ts">
+</script>
+
+<h1>Component markup</h1>
+<p>I am the component markup</p>
+
+<style>
+</style>
+```
+
 React:
 ```javascript
 const quiz = useSelector(getQuiz);
