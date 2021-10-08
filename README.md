@@ -1,10 +1,6 @@
 # Svelte VS React
 Comparing Svelte and React. How do they compare in terms of ideology, behaviour and syntax?
 
-## TODO:
-- Add points from [here](https://dev.to/swyx/svelte-for-sites-react-for-apps-2o8h)
-- Add section about Svelte [`actions`](https://svelte.dev/tutorial/actions).
-
 ## Svelte:
 A compiler approach to frontend frameworks.
 
@@ -14,9 +10,13 @@ A compiler approach to frontend frameworks.
 - Little boilerplate.
   - Less code = less bugs.
   - Less explicit code, sometimes harder to follow.
+- No (required) runtime.
+- Scoped CSS.
+- Great documentation. 
+  - https://svelte.dev/tutorial/basics
 
 ## Bad(-ish):
-- CSS scoping
+- Scoped CSS.
   - `.button.s-hsgb1785` instead of `.button-hsgb1785`.
   - Classes passed to custom components don't get hash.
 - Harder to debug than React.
