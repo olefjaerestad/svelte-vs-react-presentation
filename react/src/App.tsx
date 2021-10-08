@@ -1,4 +1,4 @@
-import React, { createContext, useReducer } from 'react';
+import React, { createContext, useEffect, useReducer } from 'react';
 import { AddTodo } from './components/AddTodo/AddTodo';
 import { TodoList } from './components/TodoList/TodoList';
 import type { ITodo, TTodoAction } from './types';
@@ -23,12 +23,14 @@ export const TodosContext = createContext<{dispatch: React.Dispatch<TTodoAction>
 export const App: React.FC = function() {
   const [todos, dispatch] = useReducer(todosReducer, []);
 
+  useEffect(() => {
+    console.log('Updated todos:', todos);
+  }, [todos]);
+
   return (
-    <>
-      <TodosContext.Provider value={{dispatch}}>
-        <AddTodo />
-        <TodoList todos={todos} />
-      </TodosContext.Provider>
-    </>
+    <TodosContext.Provider value={{dispatch}}>
+      <AddTodo />
+      <TodoList todos={todos} />
+    </TodosContext.Provider>
   );
 }
