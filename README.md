@@ -34,6 +34,7 @@ A compiler approach to frontend frameworks.
 - State management.
 - Order of code blocks (e.g. reactive declarations `$: {}`) matter.
   - https://svelte.dev/repl/cda14d2c02574b5ab70bb270816b9076?version=3.38.3
+- Requires VSCode plugin for syntax highlighting and intellisense (Svelte for VS Code).
 
 ## Code examples/differences from React:
 React:
