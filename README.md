@@ -93,7 +93,7 @@ $: {
 
 React:
 ```javascript
-myRef = useRef();
+const myRef = useRef();
 ...
 <div ref={myRef}></div>
 ```
