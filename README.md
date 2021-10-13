@@ -39,6 +39,8 @@ A compiler approach to frontend frameworks.
 ## Code examples/differences from React:
 React:
 ```jsx
+import React from 'react';
+
 export function MyComponent(props) {
   return (
     <>
