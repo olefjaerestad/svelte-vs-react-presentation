@@ -2,7 +2,7 @@ import React, { FC, FormEvent, useContext, useState } from 'react';
 import { TodosContext } from '../../App';
 
 export const AddTodo: FC = function() {
-  const { dispatch } = useContext(TodosContext);
+  const {dispatch} = useContext(TodosContext);
   const [title, setTitle] = useState<string>('');
 
   function handleSubmit(e: FormEvent) {

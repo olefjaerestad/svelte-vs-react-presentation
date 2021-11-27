@@ -3,7 +3,8 @@ import { TodosContext } from '../../App';
 import type { ITodo } from '../../types';
 
 export const TodoItem: FC<ITodo & {index: number}> = function(props) {
-  const { dispatch } = useContext(TodosContext);
+  const {dispatch} = useContext(TodosContext);
+  
   function handleDelete(e: MouseEvent) {
     dispatch({
       type: 'delete',

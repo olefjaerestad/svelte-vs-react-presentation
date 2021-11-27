@@ -19,7 +19,7 @@
 
 <li>
   {title}
-  <button on:click={handleDelete}>&times;</button>
+  <button type="button" on:click={handleDelete}>&times;</button>
 </li>
 
 <style>

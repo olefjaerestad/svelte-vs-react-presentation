@@ -6,8 +6,8 @@
 </script>
 
 <ul>
-  {#each todos as todo, index}
-    <TodoItem title={todo.title} {index} />
+  {#each todos as todo, i (i)}
+    <TodoItem title={todo.title} index={i} />
   {/each}
 </ul>
 
